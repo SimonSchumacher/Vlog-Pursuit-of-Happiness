@@ -1,0 +1,64 @@
+//Import Files
+
+@import "../bootstrap/bootstrap.scss";
+@import "../scss/mixin.scss";
+@import "../scss/variables.scss";
+
+
+
+// Navigation - Header 
+#socialmediaLinks {
+    @include ListStyleNone;
+    justify-content: space-evenly; 
+}
+
+#socialmediaIcons {
+    justify-content: flex-start;
+}
+
+#mySearch {
+    flex-direction: row-reverse;
+     
+}
+
+//Background Image
+
+#brandImage {
+    @include BackgroundImage;
+    height: 90vh;
+    
+}
+
+//Headings and Featured Content
+.myheading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+        font-family: 'Homemade Apple';
+        font-size: 70px;
+        margin-top: 15%;
+    }
+    p {
+        @include MyTextStyle; 
+        
+    }
+}
+// End
+
+//Main Content
+
+.leftarticle {
+    font: {
+        family: 'Rock Salt';
+        size: 22px;
+    }
+    text-align: center;
+    margin-top: 5vh;
+}
+
+main .leftarticle img {
+    width: 75%;
+    height: auto;
+}
+
